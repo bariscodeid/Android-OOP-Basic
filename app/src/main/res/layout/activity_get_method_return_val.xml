@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetMethodReturnValActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <EditText
+            android:hint="Nilai A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/InpNilai_A"/>
+
+        <EditText
+            android:hint="Nilai B"
+            android:layout_below="@+id/InpNilai_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/InpNilai_B"/>
+
+        <Button
+            android:text="Tampilkan Value"
+            android:layout_below="@+id/InpNilai_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTampilkanHasilValue"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

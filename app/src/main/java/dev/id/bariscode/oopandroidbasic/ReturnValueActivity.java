@@ -1,13 +1,14 @@
 package dev.id.bariscode.oopandroidbasic;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import dev.id.bariscode.oopandroidbasic.Method.Function_Logic;
+
+public class ReturnValueActivity extends Function_Logic {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_return_value);
     }
 }

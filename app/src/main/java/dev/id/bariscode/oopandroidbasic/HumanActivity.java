@@ -3,6 +3,7 @@ package dev.id.bariscode.oopandroidbasic;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import dev.id.bariscode.oopandroidbasic.Object.Manusia;
 
@@ -16,6 +17,7 @@ public class HumanActivity extends Manusia {
     //TODO 6: Panggil aksi kegiatan Objek tersebut dan Jalankan Program
 
     Button btnBerjalan, btnBerlari, btnTidur, btnMakan;
+    ImageView tampilkanGambar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +28,21 @@ public class HumanActivity extends Manusia {
         btnBerlari = (Button)findViewById(R.id.btBerlari);
         btnTidur = (Button)findViewById(R.id.btTidur);
         btnMakan = (Button)findViewById(R.id.btMakan);
+        tampilkanGambar = (ImageView) findViewById(R.id.ivGambar);
 
         btnBerjalan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 berjalan();
+                tampilkanGambar.setImageResource(R.drawable.berjalan);
             }
         });
 
         btnBerlari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                berlari();
+                berlari();;
+                tampilkanGambar.setImageResource(R.drawable.berlari);
             }
         });
 
@@ -45,6 +50,7 @@ public class HumanActivity extends Manusia {
             @Override
             public void onClick(View view) {
                 tidur();
+                tampilkanGambar.setImageResource(R.drawable.tidur);
             }
         });
 
@@ -52,6 +58,7 @@ public class HumanActivity extends Manusia {
             @Override
             public void onClick(View view) {
                 makan();
+                tampilkanGambar.setImageResource(R.drawable.makan);
             }
         });
     }
